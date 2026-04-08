@@ -179,14 +179,14 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               {profile.location && (
                 <ListItem
                   icon={<MdLocationOn />}
-                  title="Based in:"
+                  title="Ubicación:"
                   value={profile.location}
                 />
               )}
               {profile.company && (
                 <OrganizationItem
                   icon={<FaBuilding />}
-                  title="Organization:"
+                  title="Organización:"
                   value={profile.company}
                   link={
                     isCompanyMention(profile.company.trim())
@@ -262,7 +262,7 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   icon={<AiFillInstagram />}
                   title="Instagram:"
                   value={social.instagram}
-                  link={`https://www.instagram.com/${social.instagram}`}
+                  link={`https://www.instagram.com/${social.instagram}/?hl=es`}
                 />
               )}
               {social?.reddit && (

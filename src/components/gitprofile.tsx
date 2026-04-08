@@ -105,9 +105,9 @@ const GitProfile = ({ config }: { config: Config }) => {
       const data = response.data;
 
       setProfile({
-        avatar: data.avatar_url,
-        name: data.name || ' ',
-        bio: data.bio || '',
+        avatar: 'profile.jpg',
+        name: 'Leandro Caki Valdivieso',
+        bio: 'Estudiante de programación\nSoy un estudiante que está aprendiendo programación desde cero, actualmente enfocado en Python y desarrollo web. Me gusta crear proyectos prácticos para mejorar mis habilidades y aprender de forma constante.',
         location: data.location || '',
         company: data.company || '',
       });

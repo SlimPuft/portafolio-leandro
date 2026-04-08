@@ -50,6 +50,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
                 <LazyImage
                   src={profile.avatar ? profile.avatar : FALLBACK_IMAGE}
                   alt={profile.name}
+                  style={{ objectPosition: 'center 15%' }}
                   placeholder={skeleton({
                     widthCls: 'w-full',
                     heightCls: 'h-full',
@@ -70,7 +71,12 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
               </span>
             )}
           </h5>
-          <div className="mt-3 text-base-content font-mono">
+          {!loading && profile && (
+            <div className="text-primary font-bold text-lg mt-1 opacity-80">
+              SlimPuft.Dev
+            </div>
+          )}
+          <div className="mt-3 text-base-content font-mono whitespace-pre-wrap">
             {loading || !profile
               ? skeleton({ widthCls: 'w-48', heightCls: 'h-5' })
               : profile.bio}
@@ -82,15 +88,9 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
               {skeleton({ widthCls: 'w-40', heightCls: 'h-8' })}
             </div>
           ) : (
-            <a
-              href={resumeFileUrl}
-              target="_blank"
-              className="btn btn-outline btn-sm text-xs mt-6 opacity-50"
-              download
-              rel="noreferrer"
-            >
-              Download Resume
-            </a>
+            <div className="btn btn-outline btn-sm text-xs mt-6 opacity-50 pointer-events-none">
+              Descargar CV
+            </div>
           ))}
       </div>
     </div>
