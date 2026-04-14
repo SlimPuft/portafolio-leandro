@@ -70,7 +70,7 @@ const CONFIG = {
     mastodon: '',
     researchGate: '',
     facebook: '',
-    instagram: 'leandrocv',
+    instagram: 'slimpuft',
     reddit: '',
     threads: '',
     youtube: '', // example: 'pewdiepie'
@@ -84,7 +84,7 @@ const CONFIG = {
     telegram: '',
     website: '',
     phone: '',
-    email: '',
+    email: 'slimpuftdb@gmail.com',
   },
   resume: {
     fileUrl:
