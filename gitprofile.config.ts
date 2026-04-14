@@ -53,6 +53,13 @@ const CONFIG = {
           imageUrl: 'python_code.png',
           link: 'https://github.com/SlimPuft/Tarea3-Ejercicios',
         },
+        {
+          title: 'Análisis de Costo de Vida',
+          description:
+            'Proyecto de análisis de datos en Python apoyado de Pandas, NumPy y Matplotlib. El script limpia y procesa un dataset de costos de vida globales para generar diferentes métricas, listas y gráficos comparativos de los países más y menos costosos para vivir.',
+          imageUrl: 'cost_of_living.png',
+          link: 'https://github.com/SlimPuft/analisis-costo-vida',
+        },
       ],
     },
   },
