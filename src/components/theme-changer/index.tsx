@@ -4,6 +4,45 @@ import { LOCAL_STORAGE_KEY_NAME } from '../../constants';
 import { skeleton } from '../../utils';
 import { MouseEvent } from 'react';
 
+const themeNamesInSpanish: Record<string, string> = {
+  light: 'Claro',
+  dark: 'Oscuro',
+  cupcake: 'Pastelito',
+  bumblebee: 'Abejorro',
+  emerald: 'Esmeralda',
+  corporate: 'Corporativo',
+  synthwave: 'Onda Sintética',
+  retro: 'Retro',
+  cyberpunk: 'Ciberpunk',
+  valentine: 'San Valentín',
+  halloween: 'Halloween',
+  garden: 'Jardín',
+  forest: 'Bosque',
+  aqua: 'Agua',
+  lofi: 'Lo-Fi',
+  pastel: 'Pastel',
+  fantasy: 'Fantasía',
+  wireframe: 'Líneas',
+  black: 'Negro',
+  luxury: 'Lujo',
+  dracula: 'Drácula',
+  cmyk: 'CMYK',
+  autumn: 'Otoño',
+  business: 'Negocios',
+  acid: 'Ácido',
+  lemonade: 'Limonada',
+  night: 'Noche',
+  coffee: 'Café',
+  winter: 'Invierno',
+  dim: 'Tenue',
+  nord: 'Nórdico',
+  sunset: 'Atardecer',
+  caramellatte: 'Caramelo',
+  abyss: 'Abismo',
+  silk: 'Seda',
+  procyon: 'Procyon',
+};
+
 /**
  * Renders a theme changer component.
  *
@@ -59,7 +98,7 @@ const ThemeChanger = ({
               ? skeleton({ widthCls: 'w-16', heightCls: 'h-5' })
               : theme === themeConfig.defaultTheme
                 ? 'Predeterminado'
-                : theme}
+                : (themeNamesInSpanish[theme] || theme)}
           </span>
         </div>
         <div className="flex-0">
@@ -95,7 +134,7 @@ const ThemeChanger = ({
                         className={`${theme === item ? 'active' : ''}`}
                       >
                         <span className="opacity-60 capitalize">
-                          {item === themeConfig.defaultTheme ? 'Predeterminado' : item}
+                          {item === themeConfig.defaultTheme ? 'Predeterminado' : (themeNamesInSpanish[item] || item)}
                         </span>
                       </a>
                     </li>
