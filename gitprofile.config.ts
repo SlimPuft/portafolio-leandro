@@ -67,6 +67,13 @@ const CONFIG = {
           imageUrl: 'python_calculator.png',
           link: 'https://github.com/SlimPuft/calculadora-python',
         },
+        {
+          title: 'Analizador de Texto en Python',
+          description:
+            'Herramienta de consola desarrollada en Python que analiza fragmentos de texto para extraer estadísticas como conteo de palabras, caracteres, oraciones y frecuencia de términos. Desarrollada como práctica de procesamiento de cadenas y manejo de datos en Python.',
+          imageUrl: 'text_analyzer.png',
+          link: 'https://github.com/SlimPuft/analizador-texto-python',
+        },
       ],
     },
   },
