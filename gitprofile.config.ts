@@ -63,7 +63,7 @@ const CONFIG = {
         {
           title: 'Calculadora en Python',
           description:
-            'Aplicación de consola que realiza operaciones matemáticas básicas en Python.',
+            'Aplicación de consola desarrollada en Python que permite realizar operaciones matemáticas básicas como suma, resta, multiplicación y división. El programa presenta un menú interactivo en la terminal donde el usuario puede seleccionar la operación deseada, ingresar los valores y obtener el resultado de forma inmediata. Incluye manejo de errores como la división entre cero y entradas inválidas. Fue desarrollada como práctica de fundamentos de Python, aplicando estructuras de control, funciones y validación de datos.',
           imageUrl: 'python_calculator.png',
           link: 'https://github.com/SlimPuft/calculadora-python',
         },
