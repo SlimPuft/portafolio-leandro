@@ -60,6 +60,13 @@ const CONFIG = {
           imageUrl: 'cost_of_living.png',
           link: 'https://github.com/SlimPuft/analisis-costo-vida',
         },
+        {
+          title: 'Calculadora en Python',
+          description:
+            'Aplicación de consola que realiza operaciones matemáticas básicas en Python.',
+          imageUrl: 'python_calculator.png',
+          link: 'https://github.com/SlimPuft/calculadora-python',
+        },
       ],
     },
   },
